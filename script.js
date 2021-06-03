@@ -21,10 +21,11 @@ function calculandoIMC(){
             msg = "Obesidade Grau I";
         }else if(imc < 40){
             msg = "Obesidade Grau II";
-        }else if(imc <= 40){
+        }else if(imc >= 40){
             msg = "Obesidade Grau III";
         }
-        resultado.textContent = `Seu IMC é ${imc}, ${msg}.`          
+        resultado.setAttribute('style', 'white-space: pre;');
+        resultado.textContent = `Seu IMC é ${imc},\r\n ${msg}.`;
     }else{
         resultado.textContent = "Por gentileza, preencha todos os campos."; 
     }
