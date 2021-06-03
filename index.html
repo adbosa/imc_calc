@@ -11,18 +11,18 @@
 
     <form action="">
 
-      <div class="container-calculadora-peso">
-        <p>Digite seu peso</p>
-        <input class="peso-slider" type="range">
-        <p>Peso</p>
-        <input id="peso" class="input-number" type="number">
+      <div class="container-dados">
+        <label for="peso">Insira o peso (1 - 200 Kg):</label>
+        <input id="peso" class="input-number" type="number" min="1" max="200">
+        <p class="medidas">Kg</p>
+        <input class="slider" type="range" min="1" max="200">
       </div>
 
-      <div class="container-calculadora-altura">
-        <p>Digite sua altura</p>
-        <input class="altura-slider" type="range">
-        <p>Altura</p>
-        <input id="altura" class="input-number" type="number">
+      <div class="container-dados">
+        <label for="altura">Insira a altura (1 - 300 cm):</label>
+        <input id="altura" class="input-number" type="number" min="1" max="300">
+        <p class="medidas">cm</p>
+        <input class="slider" type="range">
       </div>
 
       <input id="btnCalcular" class="botao-calcular" type="button" value="Calcular">

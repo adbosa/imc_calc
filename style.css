@@ -1,42 +1,61 @@
+html {
+	background-color: #bff3f7;
+	color: white;
+	font: 400 13.3333px Arial;
+}
+
 h1 {
-	margin-left: 20px;
+	margin-left: 10%;
+	text-align: center;
 }
 
 .container{
 	border: 1px solid;
 	box-shadow:0px 0px 10px;
-	padding: 15px;
-	margin: 20px;
+	padding:1%;
+	margin: 5% 40%;
 	border-radius: 0.8rem;
-	height: 480px;
+	min-height: 100%;
+	min-width: 160px;
+	background-color: #59d8e6;
 }
 
-.container-calculadora-peso,
-.container-calculadora-altura{
-	margin-bottom: 16px;
+.container-dados{
+	margin-bottom: 12px;
 	width: 100%;
+	color: blue;
+	text-align: center;
 }
 
-.peso-slider,
-.altura-slider{
+.slider{
 	width: 100%;
 	height: 1px;
 	outline: none;
+	margin: inherit;
 }
 
 .input-number{
-	height: 30px;
-	width: 90px;
-	margin-left: 20px;
-	font-size: 24px;
+	font-weight: bold;
+	margin-left: 5px;
+	margin-right: 5px;
+}
+
+.medidas{
+	display: contents;
 }
 
 .botao-calcular{
 	font-size: 18px;
+	font-weight: bold;
 	padding: 10px;
 	width: 100%;
-	background-color: #1b2845;
-	color: white;
+	background-color: #233199;
+	color:white;
 	border-radius: 0.8rem;
 	cursor: pointer;
+}
+
+#resultado{
+	text-align: center;
+	margin-top: 20px;
 }
